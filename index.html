@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximus Solomon | Portfolio</title>
+    <style>
+        :root {
+            --navy-blue: #003366;
+            --slate-gray: #4a5568;
+            --light-gray: #f8fafc;
+            --white: #ffffff;
+            --text-main: #2d3748;
+            --accent-blue: #0056b3;
+        }
+
+        * { box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', 'Segoe UI', sans-serif; 
+            margin: 0; 
+            background-color: var(--white); 
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* HEADER SECTION */
+        header { 
+            background-color: var(--navy-blue); 
+            color: var(--white); 
+            padding: 80px 20px; 
+            text-align: center; 
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 3rem; 
+            letter-spacing: -1px; 
+            text-transform: uppercase;
+        }
+        .header-links {
+            margin-top: 15px;
+        }
+        .header-links a {
+            color: white;
+            text-decoration: underline;
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+
+        /* PROFILE PICTURE SECTION */
+        .profile-container { 
+            text-align: center; 
+            margin-top: -90px; 
+            padding-bottom: 20px;
+        }
+        .profile-pic { 
+            width: 180px; 
+            height: 180px; 
+            border-radius: 50%; 
+            border: 6px solid var(--white); 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
+            object-fit: cover;
+            background-color: var(--white);
+        }
+
+        /* MAIN CONTENT */
+        .main-content { 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 0 25px 80px; 
+        }
+        
+        h2 { 
+            color: var(--navy-blue); 
+            border-bottom: 2px solid #e2e8f0; 
+            padding-bottom: 10px; 
+            margin-top: 50px;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* EXPERIENCE CARDS */
+        .experience-item { 
+            margin-bottom: 35px; 
+            padding-left: 15px;
+            border-left: 3px solid #e2e8f0;
+        }
+        .job-header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: baseline;
+            flex-wrap: wrap; 
+        }
+        .job-title { font-weight: bold; color: var(--navy-blue); font-size: 1.3rem; }
+        .job-date { color: var(--slate-gray); font-weight: 600; font-size: 0.9rem; }
+        .company-info { 
+            color: var(--slate-gray); 
+            font-style: italic; 
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        ul { padding-left: 20px; margin-top: 10px; }
+        li { margin-bottom: 8px; }
+
+        /* FOOTER */
+        footer { 
+            background-color: var(--slate-gray); 
+            color: var(--white); 
+            text-align: center; 
+            padding: 60px 20px; 
+        }
+        .cta-button { 
+            background-color: var(--white); 
+            color: var(--slate-gray); 
+            padding: 15px 35px; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.2rem; }
+            .job-header { flex-direction: column; }
+            .job-date { margin-top: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Maximus Solomon</h1>
+        <div class="header-links">
+            <a href="https://www.linkedin.com/in/maximus-solomon-1b7302283/" target="_blank">LinkedIn Profile</a>
+        </div>
+    </header>
+
+    <div class="profile-container">
+        <img src="Assets/assetpicture.jpg" alt="Maximus Solomon" class="profile-pic">
+    </div>
+
+    <div class="main-content">
+        
+        <h2>Experience</h2>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">EY - CBS Launch Intern</span>
+                <span class="job-date">06/2025 – 08/2025</span>
+            </div>
+            <span class="company-info">Rotations in Audit and Tax</span>
+            <ul>
+                <li>Gained hands-on experience with quarterly audit reviews and tax workpaper preparation[cite: 11].</li>
+                <li>Developed technical proficiency with EY platforms, enhancing skills in data analysis, reporting, and Excel[cite: 12].</li>
+                <li>Collaborated in a supportive team environment, benefiting from professional mentorship and career guidance[cite: 13].</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Target - On Demand Fulfillment Expert</span>
+                <span class="job-date">05/2024 – Present</span>
+            </div>
+            <span class="company-info">Hackensack, NJ</span>
+            <ul>
+                <li>Rotate through key stations including Guest Service, Drive-Up, Cashier, and Flex team roles[cite: 7].</li>
+                <li>Collaborate with peers to meet strategic objectives and deliver productivity and profitability targets[cite: 8].</li>
+                <li>Develop positive customer relationships through professional service and engagement[cite: 9].</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">PwC Career Preview</span>
+                <span class="job-date">06/2024</span>
+            </div>
+            <span class="company-info">Orlando, FL</span>
+            <ul>
+                <li>Engaged in interactive workshops led by PwC professionals regarding consulting, tax, and audit pathways[cite: 16].</li>
+                <li>Received personalized career guidance, refining skills in resume building and professional development[cite: 17].</li>
+                <li>Explored emerging industry trends and PwC's approach to digital transformation and risk management[cite: 18].</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Discover EY Program Participant</span>
+                <span class="job-date">01/2024</span>
+            </div>
+            <span class="company-info">Washington, DC</span>
+            <ul>
+                <li>Participated in collaborative workshops highlighting the global business environment[cite: 19].</li>
+                <li>Networked with EY professionals to gain understanding of the firm's culture and environment[cite: 20].</li>
+                <li>Enhanced knowledge of client relationship management and ethical considerations in business[cite: 21].</li>
+            </ul>
+        </div>
+
+        <h2>Education</h2>
+        <div class="experience-item">
+            <div class="job-header">
+                <span class="job-title">Rutgers Business School | Rutgers University</span>
+                <span class="job-date">Class of 2027 (Expected)</span>
+            </div>
+            <span class="company-info">New Brunswick, NJ | Major: Accounting | GPA: 3.3</span>
+            <ul>
+                <li>Rutgers Business School B-Star Scholar[cite: 52].</li>
+                <li>Active member of ALPFA (Association of Latino Professionals For America)[cite: 53].</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <h3>Interested in connecting?</h3>
+        <p>I am always open to discussing new opportunities or industry trends.</p>
+        <a href="https://www.linkedin.com/in/maximus-solomon-1b7302283/" class="cta-button" target="_blank">Connect on LinkedIn</a>
+    </footer>
+
+</body>
+</html>
