@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISC CPA Study App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="app-container">
+
+        <section id="dashboard-screen" class="screen active">
+            <header class="dashboard-header">
+                <h1>ISC Exam Prep</h1>
+                <p class="subtitle">Master Information Systems and Controls</p>
+                
+                <div class="stats-bar">
+                    <div class="stat-box">
+                        <span class="stat-label">Rank</span>
+                        <span id="user-rank" class="stat-value">Intern</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Total XP</span>
+                        <span id="user-xp" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Daily Streak</span>
+                        <span id="user-streak" class="stat-value">0 🔥</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="action-buttons">
+                <button id="btn-start-random" class="primary-btn" disabled>Start Random Quiz (10 Qs)</button>
+                <button id="btn-review-weak" class="secondary-btn" disabled>Review Weaknesses (0)</button>
+            </div>
+        </section>
+
+
+        <section id="quiz-screen" class="screen hidden">
+            <header class="quiz-header">
+                <div class="progress-tracker">Question <span id="current-q-num">1</span> of <span id="total-q-num">10</span></div>
+                <div id="combo-tracker" class="combo-tracker hidden">🔥 <span id="combo-count">3</span>x Combo!</div>
+            </header>
+
+            <div class="question-container">
+                <span id="question-category" class="category-badge">Category Placeholder</span>
+                <h2 id="question-text">Loading question...</h2>
+            </div>
+
+            <div id="choices-container" class="choices-grid"></div>
+
+            <div id="explanation-box" class="explanation-box hidden">
+                <h3 id="result-title">Correct/Incorrect Placeholder</h3>
+                <p id="explanation-text">Explanation goes here to help you study.</p>
+                <button id="btn-next-q" class="primary-btn">Next Question</button>
+            </div>
+        </section>
+
+
+        <section id="summary-screen" class="screen hidden">
+            <header class="summary-header">
+                <h2>Session Complete!</h2>
+                <div class="summary-stats">
+                    <h3 id="summary-score">0 / 10 Correct</h3>
+                    <p id="summary-xp-gained" class="xp-boost">+0 XP</p>
+                </div>
+            </header>
+
+            <div id="missed-questions-container" class="missed-questions-container hidden">
+                <h3>Needs Review:</h3>
+                <ul id="missed-list">
+                    </ul>
+            </div>
+
+            <button id="btn-home" class="primary-btn">Back to Dashboard</button>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

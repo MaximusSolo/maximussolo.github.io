@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "domain": "Information Systems",
+    "type": "multiple_choice",
+    "question": "Which of the following cloud computing service models provides a complete, managed software solution that is purchased on a pay-as-you-go basis?",
+    "options": [
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Database as a Service (DaaS)"
+    ],
+    "correct_answer": "Software as a Service (SaaS)",
+    "explanation": "SaaS provides a fully managed application to the end user (e.g., Google Workspace, Salesforce). IaaS provides raw computing resources, and PaaS provides a framework for developers."
+  },
+  {
+    "id": 2,
+    "domain": "Information Systems",
+    "type": "multiple_choice",
+    "question": "An organization needs a backup facility that is fully operational and can take over processing within minutes of a disaster. Which type of site should they implement?",
+    "options": [
+      "Cold Site",
+      "Warm Site",
+      "Hot Site",
+      "Mobile Site"
+    ],
+    "correct_answer": "Hot Site",
+    "explanation": "A hot site is a fully configured backup facility with real-time data replication that can resume operations immediately. A cold site has no hardware setup, and a warm site has hardware but needs data restoration."
+  },
+  {
+    "id": 3,
+    "domain": "Information Systems",
+    "type": "multiple_choice",
+    "question": "In disaster recovery planning, which metric defines the maximum acceptable amount of data loss measured in time?",
+    "options": [
+      "Recovery Time Objective (RTO)",
+      "Recovery Point Objective (RPO)",
+      "Maximum Tolerable Downtime (MTD)",
+      "Service Level Agreement (SLA)"
+    ],
+    "correct_answer": "Recovery Point Objective (RPO)",
+    "explanation": "RPO defines the acceptable amount of data loss measured in time (e.g., 'we can afford to lose 4 hours of data'). RTO defines how quickly systems must be restored after an outage."
+  },
+  {
+    "id": 4,
+    "domain": "Information Systems",
+    "type": "multiple_choice",
+    "question": "Which System Development Life Cycle (SDLC) methodology focuses on iterative development, frequent testing, and cross-functional collaboration?",
+    "options": [
+      "Waterfall",
+      "Agile",
+      "V-Model",
+      "Spiral"
+    ],
+    "correct_answer": "Agile",
+    "explanation": "Agile relies on iterative cycles (sprints) and continuous feedback. Waterfall is a linear, sequential approach where one phase must finish before the next begins."
+  },
+  {
+    "id": 5,
+    "domain": "Information Systems",
+    "type": "multiple_choice",
+    "question": "A critical control in the IT Change Management process is Segregation of Duties (SoD). Which two roles should strictly be separated?",
+    "options": [
+      "System Administrator and Database Administrator",
+      "Developer and Code Migrator (Deployer)",
+      "Network Engineer and Security Analyst",
+      "Helpdesk Technician and IT Manager"
+    ],
+    "correct_answer": "Developer and Code Migrator (Deployer)",
+    "explanation": "To prevent unauthorized or malicious code from reaching the production environment, the person who writes the code (Developer) must not have the access to deploy it to production."
+  },
+  {
+    "id": 6,
+    "domain": "Information Systems",
+    "type": "multiple_choice",
+    "question": "What is the primary benefit of an Enterprise Resource Planning (ERP) system?",
+    "options": [
+      "It eliminates the need for data backups.",
+      "It centralizes organizational data into a single, unified database.",
+      "It inherently prevents cyber attacks from external actors.",
+      "It allows users to bypass logical access controls."
+    ],
+    "correct_answer": "It centralizes organizational data into a single, unified database.",
+    "explanation": "ERP systems integrate various business processes (HR, accounting, manufacturing) into a single centralized database, reducing data silos and ensuring consistency."
+  },
+  {
+    "id": 7,
+    "domain": "Information Systems",
+    "type": "multiple_choice",
+    "question": "Which software intermediary allows two independent applications to talk to each other and share data?",
+    "options": [
+      "Hypervisor",
+      "Application Programming Interface (API)",
+      "Virtual Private Network (VPN)",
+      "Firewall"
+    ],
+    "correct_answer": "Application Programming Interface (API)",
+    "explanation": "An API is a set of rules and protocols that allows different software applications to communicate and exchange data securely."
+  },
+  {
+    "id": 8,
+    "domain": "Information Systems",
+    "type": "multiple_choice",
+    "question": "What technology is responsible for allocating hardware resources (CPU, RAM) to multiple Virtual Machines (VMs) running on a single physical server?",
+    "options": [
+      "Hypervisor",
+      "Load Balancer",
+      "Router",
+      "Domain Name System (DNS)"
+    ],
+    "correct_answer": "Hypervisor",
+    "explanation": "A hypervisor (or Virtual Machine Monitor) is the software layer that creates, runs, and manages virtual machines by allocating physical hardware resources to them."
+  },
+  {
+    "id": 9,
+    "domain": "Information Systems",
+    "type": "multiple_choice",
+    "question": "Which type of network acts as a barrier between an organization's trusted internal network and an untrusted external network like the internet?",
+    "options": [
+      "Local Area Network (LAN)",
+      "Demilitarized Zone (DMZ)",
+      "Wide Area Network (WAN)",
+      "Storage Area Network (SAN)"
+    ],
+    "correct_answer": "Demilitarized Zone (DMZ)",
+    "explanation": "A DMZ is a subnetwork that exposes an organization's external-facing services (like web servers) to an untrusted network, keeping the rest of the internal network secure behind a firewall."
+  },
+  {
+    "id": 10,
+    "domain": "Information Systems",
+    "type": "multiple_choice",
+    "question": "What is the difference between a Business Continuity Plan (BCP) and a Disaster Recovery Plan (DRP)?",
+    "options": [
+      "BCP focuses on IT infrastructure, while DRP focuses on personnel safety.",
+      "BCP focuses on keeping the whole business operational, while DRP focuses specifically on restoring IT systems.",
+      "There is no difference; the terms are synonymous.",
+      "DRP is used for natural disasters, while BCP is used for cyber attacks."
+    ],
+    "correct_answer": "BCP focuses on keeping the whole business operational, while DRP focuses specifically on restoring IT systems.",
+    "explanation": "The BCP is the overarching strategy to keep business functions running during a crisis. The DRP is a subset of the BCP specifically tailored to recovering IT systems and data."
+  },
+  {
+    "id": 11,
+    "domain": "Data Management",
+    "type": "multiple_choice",
+    "question": "In a relational database, what is the purpose of a Foreign Key?",
+    "options": [
+      "To uniquely identify each record in a table.",
+      "To establish a relationship between two tables.",
+      "To encrypt data stored in the database.",
+      "To automatically sort data in alphabetical order."
+    ],
+    "correct_answer": "To establish a relationship between two tables.",
+    "explanation": "A Foreign Key in one table points to a Primary Key in another table, creating a relationship between the two sets of data."
+  },
+  {
+    "id": 12,
+    "domain": "Data Management",
+    "type": "multiple_choice",
+    "question": "The process of organizing data in a database to reduce redundancy and improve data integrity is known as:",
+    "options": [
+      "Data Mining",
+      "Data Normalization",
+      "Data Obfuscation",
+      "Data Warehousing"
+    ],
+    "correct_answer": "Data Normalization",
+    "explanation": "Normalization involves dividing large tables into smaller, related tables to eliminate redundant data and ensure data dependencies make logical sense."
+  },
+  {
+    "id": 13,
+    "domain": "Data Management",
+    "type": "multiple_choice",
+    "question": "A massive repository that stores vast amounts of raw, unstructured, and structured data in its native format until it is needed is called a:",
+    "options": [
+      "Data Warehouse",
+      "Data Lake",
+      "Data Mart",
+      "Data Dictionary"
+    ],
+    "correct_answer": "Data Lake",
+    "explanation": "Unlike a Data Warehouse (which stores structured, processed data), a Data Lake holds raw, unformatted data until an application or analyst needs to query it."
+  },
+  {
+    "id": 14,
+    "domain": "Data Management",
+    "type": "multiple_choice",
+    "question": "Which of the following is considered a Data Manipulation Language (DML) command in SQL?",
+    "options": [
+      "CREATE",
+      "DROP",
+      "UPDATE",
+      "GRANT"
+    ],
+    "correct_answer": "UPDATE",
+    "explanation": "DML commands deal with the manipulation of data within tables (SELECT, INSERT, UPDATE, DELETE). CREATE and DROP are Data Definition Language (DDL) commands."
+  },
+  {
+    "id": 15,
+    "domain": "Data Management",
+    "type": "multiple_choice",
+    "question": "In the context of Big Data, the term 'Velocity' refers to:",
+    "options": [
+      "The accuracy and trustworthiness of the data.",
+      "The speed at which data is generated and processed.",
+      "The sheer volume of data stored on servers.",
+      "The different types and formats of data."
+    ],
+    "correct_answer": "The speed at which data is generated and processed.",
+    "explanation": "Big Data is often defined by the 'V's. Velocity is the speed of generation. Volume is size, Variety is the different formats, and Veracity is the accuracy."
+  },
+  {
+    "id": 16,
+    "domain": "Data Management",
+    "type": "multiple_choice",
+    "question": "The three-step process of pulling data from multiple sources, cleaning and formatting it, and then loading it into a centralized database is known as:",
+    "options": [
+      "API Integration",
+      "Extract, Transform, Load (ETL)",
+      "Data Normalization",
+      "Continuous Integration/Continuous Deployment (CI/CD)"
+    ],
+    "correct_answer": "Extract, Transform, Load (ETL)",
+    "explanation": "ETL is the standard process for moving data from operational systems into a Data Warehouse for business intelligence and analytics."
+  },
+  {
+    "id": 17,
+    "domain": "Data Management",
+    "type": "multiple_choice",
+    "question": "What serves as a centralized repository of metadata, defining the meaning, relationships, origin, and format of data elements within an organization?",
+    "options": [
+      "Data Dictionary",
+      "Hypervisor",
+      "Blockchain",
+      "Data Lake"
+    ],
+    "correct_answer": "Data Dictionary",
+    "explanation": "A data dictionary contains metadata. It helps IT staff and business users understand what the data is, where it comes from, and how it is formatted."
+  },
+  {
+    "id": 18,
+    "domain": "Data Management",
+    "type": "multiple_choice",
+    "question": "Emails, social media posts, and multimedia files are best categorized as:",
+    "options": [
+      "Structured Data",
+      "Semi-structured Data",
+      "Unstructured Data",
+      "Master Data"
+    ],
+    "correct_answer": "Unstructured Data",
+    "explanation": "Unstructured data does not follow a predefined data model or fit into relational database tables, unlike structured data (like numbers in an Excel grid)."
+  },
+  {
+    "id": 19,
+    "domain": "Data Management",
+    "type": "multiple_choice",
+    "question": "The discipline that ensures an organization's critical, core data (like customer or product lists) is accurate, consistent, and uniform across all systems is called:",
+    "options": [
+      "Master Data Management (MDM)",
+      "Data Loss Prevention (DLP)",
+      "Entity-Relationship Modeling",
+      "Predictive Analytics"
+    ],
+    "correct_answer": "Master Data Management (MDM)",
+    "explanation": "MDM involves creating a single 'source of truth' for an enterprise's most critical data to prevent inconsistencies across different departments."
+  },
+  {
+    "id": 20,
+    "domain": "Data Management",
+    "type": "multiple_choice",
+    "question": "Which database type is designed to handle highly complex, unstructured data and does not use traditional tables and rows?",
+    "options": [
+      "Relational Database",
+      "OLTP Database",
+      "NoSQL Database",
+      "SQL Database"
+    ],
+    "correct_answer": "NoSQL Database",
+    "explanation": "NoSQL (Not Only SQL) databases use document, key-value, or graph structures instead of tables, making them highly scalable for unstructured data."
+  },
+  {
+    "id": 21,
+    "domain": "Security",
+    "type": "multiple_choice",
+    "question": "A type of malware that encrypts a victim's files and demands payment in exchange for the decryption key is known as:",
+    "options": [
+      "Spyware",
+      "Ransomware",
+      "Trojan Horse",
+      "Worm"
+    ],
+    "correct_answer": "Ransomware",
+    "explanation": "Ransomware holds an organization's data hostage through encryption until a financial ransom (often in cryptocurrency) is paid."
+  },
+  {
+    "id": 22,
+    "domain": "Security",
+    "type": "multiple_choice",
+    "question": "A cyber attacker sends an email mimicking the CEO, asking the CFO to urgently wire funds. This highly targeted social engineering attack is called:",
+    "options": [
+      "Phishing",
+      "Baiting",
+      "Whaling",
+      "Tailgating"
+    ],
+    "correct_answer": "Whaling",
+    "explanation": "Whaling is a specific type of spear-phishing that targets high-level executives (the 'whales' of the company) to steal credentials or authorize fraud."
+  },
+  {
+    "id": 23,
+    "domain": "Security",
+    "type": "multiple_choice",
+    "question": "Multi-Factor Authentication (MFA) requires two or more independent credentials. Using a password and a fingerprint scan relies on which two factors?",
+    "options": [
+      "Knowledge and Possession",
+      "Possession and Inherence",
+      "Knowledge and Inherence",
+      "Location and Inherence"
+    ],
+    "correct_answer": "Knowledge and Inherence",
+    "explanation": "A password is something you know (Knowledge). A fingerprint is something you are (Inherence / Biometrics). A smartphone token would be something you have (Possession)."
+  },
+  {
+    "id": 24,
+    "domain": "Security",
+    "type": "multiple_choice",
+    "question": "An IT security model where users are granted network access based strictly on their job function and title is known as:",
+    "options": [
+      "Discretionary Access Control (DAC)",
+      "Role-Based Access Control (RBAC)",
+      "Mandatory Access Control (MAC)",
+      "Rule-Based Access Control"
+    ],
+    "correct_answer": "Role-Based Access Control (RBAC)",
+    "explanation": "RBAC restricts system access based on the roles assigned to users within an organization, simplifying access management."
+  },
+  {
+    "id": 25,
+    "domain": "Security",
+    "type": "multiple_choice",
+    "question": "In asymmetric encryption, if an sender encrypts a message using the recipient's public key, what must the recipient use to decrypt it?",
+    "options": [
+      "The sender's public key",
+      "The sender's private key",
+      "The recipient's public key",
+      "The recipient's private key"
+    ],
+    "correct_answer": "The recipient's private key",
+    "explanation": "Asymmetric encryption uses a mathematically linked key pair. Data encrypted with a public key can only be decrypted by the corresponding private key."
+  },
+  {
+    "id": 26,
+    "domain": "Security",
+    "type": "multiple_choice",
+    "question": "What is the primary difference between Vulnerability Scanning and Penetration Testing?",
+    "options": [
+      "Vulnerability scanning is manual; penetration testing is automated.",
+      "Vulnerability scanning identifies potential weaknesses; penetration testing actively exploits them.",
+      "Vulnerability scanning guarantees security; penetration testing does not.",
+      "They are identical terms for the same procedure."
+    ],
+    "correct_answer": "Vulnerability scanning identifies potential weaknesses; penetration testing actively exploits them.",
+    "explanation": "A scanner simply lists open flaws (like outdated software). A penetration test (ethical hacking) involves a human trying to break in using those flaws."
+  },
+  {
+    "id": 27,
+    "domain": "Security",
+    "type": "multiple_choice",
+    "question": "Which security concept states that users should only be given the absolute minimum level of access rights necessary to perform their job?",
+    "options": [
+      "Defense in Depth",
+      "Principle of Least Privilege",
+      "Segregation of Duties",
+      "Zero Trust"
+    ],
+    "correct_answer": "Principle of Least Privilege",
+    "explanation": "Least privilege minimizes risk by ensuring that if a user's account is compromised, the attacker has limited access to the wider network."
+  },
+  {
+    "id": 28,
+    "domain": "Security",
+    "type": "multiple_choice",
+    "question": "An attack that overwhelms a system or network with a flood of internet traffic from multiple compromised sources to render it unavailable is a:",
+    "options": [
+      "Distributed Denial of Service (DDoS) attack",
+      "Man-in-the-Middle (MitM) attack",
+      "Cross-Site Scripting (XSS) attack",
+      "SQL Injection"
+    ],
+    "correct_answer": "Distributed Denial of Service (DDoS) attack",
+    "explanation": "DDoS attacks use botnets (networks of infected computers) to flood a target server with traffic, causing it to crash or become unresponsive to legitimate users."
+  },
+  {
+    "id": 29,
+    "domain": "Security",
+    "type": "multiple_choice",
+    "question": "A security framework that assumes threats exist both outside and inside the network, requiring strict verification for every person and device trying to access resources, is called:",
+    "options": [
+      "Perimeter Security Model",
+      "Zero Trust Architecture",
+      "Open Systems Interconnection (OSI)",
+      "Defense in Depth"
+    ],
+    "correct_answer": "Zero Trust Architecture",
+    "explanation": "Zero Trust operates on the principle of 'never trust, always verify.' It abandons the old idea that everything inside the corporate firewall is safe."
+  },
+  {
+    "id": 30,
+    "domain": "Security",
+    "type": "multiple_choice",
+    "question": "Which cryptographic process takes an input of any size and produces a fixed-size string of characters to verify data integrity?",
+    "options": [
+      "Symmetric Encryption",
+      "Asymmetric Encryption",
+      "Hashing",
+      "Tokenization"
+    ],
+    "correct_answer": "Hashing",
+    "explanation": "Hashing is a one-way mathematical function used to prove that data has not been altered. If even one character of the original data changes, the hash value completely changes."
+  },
+  {
+    "id": 31,
+    "domain": "Confidentiality and Privacy",
+    "type": "multiple_choice",
+    "question": "Under the EU's General Data Protection Regulation (GDPR), the 'Right to Erasure' is also commonly known as:",
+    "options": [
+      "The Right to Access",
+      "The Right to be Forgotten",
+      "The Right to Data Portability",
+      "The Right to Rectification"
+    ],
+    "correct_answer": "The Right to be Forgotten",
+    "explanation": "The Right to be Forgotten allows individuals to request that an organization delete their personal data when it is no longer necessary for the original purpose."
+  },
+  {
+    "id": 32,
+    "domain": "Confidentiality and Privacy",
+    "type": "multiple_choice",
+    "question": "Which security standard applies to all entities that store, process, and/or transmit cardholder data?",
+    "options": [
+      "HIPAA",
+      "SOX",
+      "PCI DSS",
+      "GLBA"
+    ],
+    "correct_answer": "PCI DSS",
+    "explanation": "The Payment Card Industry Data Security Standard (PCI DSS) is a set of security standards designed to ensure all companies that accept or process credit card information maintain a secure environment."
+  },
+  {
+    "id": 33,
+    "domain": "Confidentiality and Privacy",
+    "type": "multiple_choice",
+    "question": "Under the Health Insurance Portability and Accountability Act (HIPAA), medical records and payment history are protected under the acronym PHI. What does PHI stand for?",
+    "options": [
+      "Personal Health Information",
+      "Protected Health Information",
+      "Private Health Identifiers",
+      "Patient Health Index"
+    ],
+    "correct_answer": "Protected Health Information",
+    "explanation": "PHI stands for Protected Health Information, which includes any information in a medical record that can be used to identify an individual."
+  },
+  {
+    "id": 34,
+    "domain": "Confidentiality and Privacy",
+    "type": "multiple_choice",
+    "question": "During a cyber incident, the stage where IT staff isolate infected servers from the rest of the network to prevent malware from spreading is called:",
+    "options": [
+      "Preparation",
+      "Identification",
+      "Containment",
+      "Eradication"
+    ],
+    "correct_answer": "Containment",
+    "explanation": "Containment is the critical incident response phase aimed at stopping the threat from spreading further through the network."
+  },
+  {
+    "id": 35,
+    "domain": "Confidentiality and Privacy",
+    "type": "multiple_choice",
+    "question": "Replacing sensitive data with fictitious but realistic data for the purpose of software testing is known as:",
+    "options": [
+      "Data Masking",
+      "Encryption",
+      "Data Mining",
+      "Hashing"
+    ],
+    "correct_answer": "Data Masking",
+    "explanation": "Data masking (or data obfuscation) hides original data with modified content (like changing real social security numbers to fake ones) so developers can test systems without exposing real PII."
+  },
+  {
+    "id": 36,
+    "domain": "Confidentiality and Privacy",
+    "type": "multiple_choice",
+    "question": "Which type of software is specifically designed to detect and prevent unauthorized data exfiltration (e.g., an employee emailing a confidential spreadsheet to a personal account)?",
+    "options": [
+      "Intrusion Detection System (IDS)",
+      "Data Loss Prevention (DLP)",
+      "Antivirus",
+      "Virtual Private Network (VPN)"
+    ],
+    "correct_answer": "Data Loss Prevention (DLP)",
+    "explanation": "DLP solutions monitor and control endpoint activities, filter data streams on corporate networks, and monitor data in the cloud to protect data at rest, in motion, and in use."
+  },
+  {
+    "id": 37,
+    "domain": "Confidentiality and Privacy",
+    "type": "multiple_choice",
+    "question": "In a data classification policy, who is primarily responsible for determining the classification level (e.g., Public, Confidential) of a specific data set?",
+    "options": [
+      "The Data Custodian",
+      "The Data Owner",
+      "The IT Security Manager",
+      "The End User"
+    ],
+    "correct_answer": "The Data Owner",
+    "explanation": "The Data Owner (usually a business leader) understands the value and risk of the data and defines its classification. The Data Custodian (usually IT) implements the technical controls to protect it."
+  },
+  {
+    "id": 38,
+    "domain": "Confidentiality and Privacy",
+    "type": "multiple_choice",
+    "question": "While often used interchangeably, what is the primary difference between Confidentiality and Privacy in information systems?",
+    "options": [
+      "Confidentiality applies to business data (trade secrets), while Privacy applies to personal data (PII).",
+      "Privacy is enforced by encryption, while Confidentiality is enforced by firewalls.",
+      "Confidentiality is a legal requirement, while Privacy is optional.",
+      "There is no difference; the terms mean the exact same thing."
+    ],
+    "correct_answer": "Confidentiality applies to business data (trade secrets), while Privacy applies to personal data (PII).",
+    "explanation": "Confidentiality is about protecting authorized access to sensitive corporate information. Privacy is specifically concerned with protecting the rights of individuals regarding their personal information."
+  },
+  {
+    "id": 39,
+    "domain": "Confidentiality and Privacy",
+    "type": "multiple_choice",
+    "question": "Which privacy regulation grants California residents the right to opt-out of the sale of their personal information?",
+    "options": [
+      "GDPR",
+      "HIPAA",
+      "CCPA",
+      "GLBA"
+    ],
+    "correct_answer": "CCPA",
+    "explanation": "The California Consumer Privacy Act (CCPA) provides California consumers with robust data privacy rights, including the explicit right to say no to the sale of their personal data."
+  },
+  {
+    "id": 40,
+    "domain": "Confidentiality and Privacy",
+    "type": "multiple_choice",
+    "question": "To mitigate third-party risk, organizations often review independent auditor reports on their vendors' security controls. The most common report used for this purpose is a:",
+    "options": [
+      "SOC 2 Report",
+      "Form 10-K",
+      "Penetration Test Report",
+      "Financial Audit Report"
+    ],
+    "correct_answer": "SOC 2 Report",
+    "explanation": "A SOC 2 report evaluates a service organization's controls relevant to security, availability, processing integrity, confidentiality, or privacy, making it vital for vendor risk management."
+  },
+  {
+    "id": 41,
+    "domain": "SOC Engagements",
+    "type": "multiple_choice",
+    "question": "What is the primary focus of a SOC 1 engagement?",
+    "options": [
+      "Internal Controls over Financial Reporting (ICFR)",
+      "Cybersecurity defense mechanisms",
+      "Environmental, Social, and Governance (ESG) practices",
+      "Data privacy compliance under GDPR"
+    ],
+    "correct_answer": "Internal Controls over Financial Reporting (ICFR)",
+    "explanation": "SOC 1 reports are designed specifically to evaluate controls at a service organization that are relevant to the user entities' financial statement reporting."
+  },
+  {
+    "id": 42,
+    "domain": "SOC Engagements",
+    "type": "multiple_choice",
+    "question": "In a SOC report, what is the difference between a Type 1 and a Type 2 report?",
+    "options": [
+      "Type 1 tests IT controls; Type 2 tests financial controls.",
+      "Type 1 reports on design at a point in time; Type 2 reports on operating effectiveness over a period of time.",
+      "Type 1 is for public use; Type 2 is restricted use.",
+      "Type 1 guarantees zero breaches; Type 2 guarantees compliance."
+    ],
+    "correct_answer": "Type 1 reports on design at a point in time; Type 2 reports on operating effectiveness over a period of time.",
+    "explanation": "A Type 1 report assesses if controls are designed properly as of a specific date. A Type 2 report involves sample testing to prove the controls actually worked continuously over a period (usually 6-12 months)."
+  },
+  {
+    "id": 43,
+    "domain": "SOC Engagements",
+    "type": "multiple_choice",
+    "question": "Which of the five Trust Services Criteria (TSC) is mandatory for every SOC 2 engagement?",
+    "options": [
+      "Availability",
+      "Privacy",
+      "Processing Integrity",
+      "Security (Common Criteria)"
+    ],
+    "correct_answer": "Security (Common Criteria)",
+    "explanation": "Security, also known as the Common Criteria, serves as the foundation of a SOC 2 report and is the only criteria that must be included in every engagement."
+  },
+  {
+    "id": 44,
+    "domain": "SOC Engagements",
+    "type": "multiple_choice",
+    "question": "What does CUEC stand for in the context of a SOC report?",
+    "options": [
+      "Common User Encryption Controls",
+      "Complementary User Entity Controls",
+      "Certified Unified Enterprise Criteria",
+      "Continuous Usage and Evaluation Criteria"
+    ],
+    "correct_answer": "Complementary User Entity Controls",
+    "explanation": "CUECs are controls that the service organization assumes its clients (user entities) have implemented in order to achieve the overall control objectives."
+  },
+  {
+    "id": 45,
+    "domain": "SOC Engagements",
+    "type": "multiple_choice",
+    "question": "If a service organization uses a subservice organization (like AWS for hosting) and excludes the subservice organization's controls from the scope of their SOC report, this is known as the:",
+    "options": [
+      "Inclusive Method",
+      "Carve-Out Method",
+      "Exclusionary Principle",
+      "Third-Party Bypass"
+    ],
+    "correct_answer": "Carve-Out Method",
+    "explanation": "The carve-out method excludes the subservice organization's controls from the auditor's testing and opinion. The inclusive method would include them."
+  },
+  {
+    "id": 46,
+    "domain": "SOC Engagements",
+    "type": "multiple_choice",
+    "question": "Which type of SOC report is designed for general public distribution and is often posted on a company's website?",
+    "options": [
+      "SOC 1 Type 2",
+      "SOC 2 Type 1",
+      "SOC 2 Type 2",
+      "SOC 3"
+    ],
+    "correct_answer": "SOC 3",
+    "explanation": "SOC 1 and SOC 2 reports are restricted-use documents intended only for management and clients. SOC 3 reports are highly summarized and designed for public marketing purposes."
+  },
+  {
+    "id": 47,
+    "domain": "SOC Engagements",
+    "type": "multiple_choice",
+    "question": "In a SOC 2 report, the section where the service organization's leadership takes responsibility for the description of the system and the design of the controls is called:",
+    "options": [
+      "The Independent Auditor's Report",
+      "The Management Assertion",
+      "The Description of Tests of Controls",
+      "The Gap Letter"
+    ],
+    "correct_answer": "The Management Assertion",
+    "explanation": "Management is required to provide a written assertion stating that the system description is fair and that the controls were suitably designed (and operating effectively, if Type 2)."
+  },
+  {
+    "id": 48,
+    "domain": "SOC Engagements",
+    "type": "multiple_choice",
+    "question": "If a user entity requires assurance for a financial period that ends after the period covered by their vendor's SOC 1 report, what document should the user entity request from the vendor?",
+    "options": [
+      "A SOC 3 Report",
+      "A Bridge Letter (Gap Letter)",
+      "A Penetration Test Summary",
+      "An Unmodified Opinion"
+    ],
+    "correct_answer": "A Bridge Letter (Gap Letter)",
+    "explanation": "A Bridge/Gap letter is a statement from vendor management confirming that no material changes to the control environment occurred between the end date of the SOC report and the user entity's fiscal year-end."
+  },
+  {
+    "id": 49,
+    "domain": "SOC Engagements",
+    "type": "multiple_choice",
+    "question": "If a service auditor finds significant control exceptions that prevent a control objective from being achieved, they will issue a(n):",
+    "options": [
+      "Unmodified Opinion",
+      "Qualified Opinion",
+      "Disclaimer of Opinion",
+      "Approved Opinion"
+    ],
+    "correct_answer": "Qualified Opinion",
+    "explanation": "A qualified opinion indicates that controls were operating effectively *except for* the specific issues noted. An unmodified (clean) opinion means no significant issues were found."
+  },
+  {
+    "id": 50,
+    "domain": "SOC Engagements",
+    "type": "multiple_choice",
+    "question": "According to the Trust Services Criteria, the principle that systems must perform their intended functions in a complete, valid, accurate, timely, and authorized manner is:",
+    "options": [
+      "Security",
+      "Availability",
+      "Processing Integrity",
+      "Confidentiality"
+    ],
+    "correct_answer": "Processing Integrity",
+    "explanation": "Processing Integrity ensures that the system processes data exactly as intended without errors, unauthorized manipulations, or omissions."
+  }
+]

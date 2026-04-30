@@ -1,0 +1,309 @@
+/* ==========================================
+   CSS VARIABLES (Color Palette & Sizing)
+   ========================================== */
+:root {
+    --bg-color: #f4f7f6;
+    --card-bg: #ffffff;
+    --text-main: #2d3748;
+    --text-muted: #718096;
+    --primary-color: #3182ce;
+    --primary-hover: #2b6cb0;
+    --secondary-color: #e2e8f0;
+    --secondary-hover: #cbd5e0;
+    --success-color: #48bb78;
+    --danger-color: #f56565;
+    --combo-color: #ed8936;
+    
+    --border-radius: 12px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================
+   GLOBAL RESET & TYPOGRAPHY
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ==========================================
+   APP CONTAINER (The Main "Window")
+   ========================================== */
+.app-container {
+    background-color: var(--card-bg);
+    width: 100%;
+    max-width: 500px;
+    min-height: 600px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* SPA Logic: Hide screens that aren't active */
+.hidden {
+    display: none !important;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+    color: var(--text-main);
+    margin-top: 10px;
+}
+
+.secondary-btn:hover {
+    background-color: var(--secondary-hover);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ==========================================
+   SCREEN 1: DASHBOARD
+   ========================================== */
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.stats-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-top: 30px;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.action-buttons {
+    margin-top: auto;
+}
+
+/* ==========================================
+   SCREEN 2: ACTIVE SESSION
+   ========================================== */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.combo-tracker {
+    color: var(--combo-color);
+    font-weight: 800;
+    animation: pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes pop {
+    0% { transform: scale(0.8); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.category-badge {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.question-container h2 {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.choices-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.choice-btn {
+    background-color: var(--card-bg);
+    border: 2px solid var(--secondary-color);
+    color: var(--text-main);
+    text-align: left;
+    font-weight: 400;
+}
+
+.choice-btn:hover:not(:disabled) {
+    border-color: var(--primary-color);
+    background-color: #ebf8ff; /* Light blue tint */
+}
+
+/* States applied by JavaScript when grading */
+.choice-btn.correct {
+    background-color: var(--success-color) !important;
+    border-color: var(--success-color) !important;
+    color: white !important;
+}
+
+.choice-btn.incorrect {
+    background-color: var(--danger-color) !important;
+    border-color: var(--danger-color) !important;
+    color: white !important;
+}
+
+/* Explanation Box */
+.explanation-box {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    border-left: 5px solid var(--primary-color);
+}
+
+.explanation-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.explanation-box p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   SCREEN 3: SUMMARY
+   ========================================== */
+.summary-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.summary-stats h3 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.xp-boost {
+    color: var(--combo-color);
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.missed-questions-container {
+    background-color: #fff5f5; /* Light red tint */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.missed-questions-container h3 {
+    color: var(--danger-color);
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+#missed-list {
+    list-style-position: inside;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--text-main);
+}
+
+#missed-list li {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #fed7d7;
+}
+
+#missed-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
